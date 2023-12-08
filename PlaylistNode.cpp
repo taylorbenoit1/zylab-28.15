@@ -1,3 +1,8 @@
+// Taylor Benoit 
+// Stephen Lahood
+// Jack Rivas Vazquez
+
+
 #include "PlaylistNode.h"
 #include <iostream>
 using namespace std; 
