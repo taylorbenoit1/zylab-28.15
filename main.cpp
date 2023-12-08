@@ -2,9 +2,9 @@
 #include "PlaylistNode.h"
 // Names of poeple who did the project:
 
-// Taylor 
-// Stephen
-// Jack
+// Taylor Benoit 
+// Stephen Lahood
+// Jack Rivas Vazquez
 
 using namespace std;
 
