@@ -1,3 +1,8 @@
+// Taylor Benoit 
+// Stephen Lahood
+// Jack Rivas Vazquez
+
+
 #ifndef PLAYLISTNODE_H
 #define PLAYLISTNODE_H
 
