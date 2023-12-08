@@ -1,18 +1,18 @@
 #include "PlaylistNode.h"
 #include <iostream>
-
+using namespace std; 
 
 PlaylistNode::PlaylistNode()
     : uniqueID("none"), songName("none"), artistName("none"), songLength(0), nextNodePtr(nullptr) {}
 
 
-PlaylistNode::PlaylistNode(std::string id, std::string song, std::string artist, int length)
+PlaylistNode::PlaylistNode(string id, string song, string artist, int length)
     : uniqueID(id), songName(song), artistName(artist), songLength(length), nextNodePtr(nullptr) {}
 
 
-std::string PlaylistNode::GetID() const { return uniqueID; }
-std::string PlaylistNode::GetSongName() const { return songName; }
-std::string PlaylistNode::GetArtistName() const { return artistName; }
+string PlaylistNode::GetID() const { return uniqueID; }
+string PlaylistNode::GetSongName() const { return songName; }
+string PlaylistNode::GetArtistName() const { return artistName; }
 int PlaylistNode::GetSongLength() const { return songLength; }
 PlaylistNode* PlaylistNode::GetNext() const { return nextNodePtr; }
 
@@ -28,9 +28,9 @@ void PlaylistNode::SetNext(PlaylistNode* nodePtr) {
 
 
 void PlaylistNode::PrintPlaylistNode() const {
-    std::cout << "Unique ID: " << uniqueID << std::endl;
-    std::cout << "Song Name: " << songName << std::endl;
-    std::cout << "Artist Name: " << artistName << std::endl;
-    std::cout << "Song Length (in seconds): " << songLength << std::endl;
-    std::cout << std::endl;
+cout << "Unique ID: " << uniqueID << endl;
+cout << "Song Name: " << songName << endl;
+cout << "Artist Name: " << artistName << endl;
+cout << "Song Length (in seconds): " << songLength << endl;
+cout << endl;
 }
