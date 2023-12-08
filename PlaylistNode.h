@@ -3,22 +3,24 @@
 
 #include <string>
 
+using namespace std;
+
 class PlaylistNode{
 private:
-    std::string uniqueID;
-    std::string songName;
-    std::string artistName;
+    string uniqueID;
+    string songName;
+    string artistName;
     int songLength;
     PlaylistNode* nextNodePtr;
 
 public:
     PlaylistNode();  
-    PlaylistNode(std::string id, std::string song, std::string artist, int length); 
+    PlaylistNode(string id, string song, string artist, int length); 
 
 
-    std::string GetID() const;
-    std::string GetSongName() const;
-    std::string GetArtistName() const;
+    string GetID() const;
+    string GetSongName() const;
+    string GetArtistName() const;
     int GetSongLength() const;
     PlaylistNode* GetNext() const;
 
